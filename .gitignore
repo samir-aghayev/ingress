@@ -1,0 +1,15 @@
+### IntelliJ IDEA ###
+out/
+*.iml
+**/out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+.gradle/
+build/
+!gradle-wrapper.jar
