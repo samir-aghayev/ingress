@@ -1,6 +1,5 @@
 package arrayTask2;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -42,7 +41,6 @@ public class Person {
         if (!books.isEmpty()) {
             Collections.sort(books);
            return books.getLast();
-
         }
         return null;
     }

@@ -1,7 +1,5 @@
 package arrayTask2;
 
-import java.util.Date;
-
 public class Author {
     private String authorName;
     private Boolean isAlive;

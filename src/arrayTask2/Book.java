@@ -9,6 +9,8 @@ public final class Book implements Comparable<Book> {
     private final Boolean isForSale;
     private final String description;
 
+
+
     public Book(List<Author> authors, String bookName, Integer pageCount, Boolean isForSale, String description) {
         this.authors = List.copyOf(authors);
         this.bookName = bookName;
