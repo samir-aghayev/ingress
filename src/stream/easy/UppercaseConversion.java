@@ -1,4 +1,4 @@
-package stream;
+package stream.easy;
 //Uppercase Conversion: Given a list of names, use a stream to convert all names to uppercase and print them.
 
 import java.util.List;
