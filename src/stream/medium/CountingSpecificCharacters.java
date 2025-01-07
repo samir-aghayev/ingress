@@ -12,7 +12,9 @@ public class CountingSpecificCharacters {
         List<String> strings = List.of("Amy", "Bob", "Charlie", "David", "Anna", "Alex", "Eric", "Frank", "George", "Alice", "Harry", "Ivan", "Jack");
         long count = strings.stream()
                 .mapToLong(string -> string.chars()
-                        .filter(character -> character == 'a').count()).sum();
+                        .filter(character -> character == 'a')
+                        .count())
+                .sum();
         System.out.println(count);
     }
 }
