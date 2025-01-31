@@ -11,8 +11,12 @@ public class AnnotationDetector {
     public static void detectAnnotation(Class<?> clazz) {
         Method[] methods = clazz.getDeclaredMethods();
         for (Method method : methods) {
-            MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);
-            System.out.println("Method: " + method.getName() + " " + annotation.value());
+            if (method.isAnnotationPresent(MyAnnotation.class)) {
+                MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);
+                System.out.println("Method: " + method.getName() + ", has annotation: " + annotation.value());
+            }else {
+                System.out.println("Method: " + method.getName() + ", has not annotation");
+            }
         }
     }
 }
